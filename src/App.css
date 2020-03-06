@@ -1,0 +1,80 @@
+@import url('https://rsms.me/inter/inter.css');
+
+@font-face {
+  font-family: 'FalsterGrotesk-Light';
+  src: url(./assets/FalsterGrotesk-Light.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'FalsterGrotesk-Regular';
+  src: url(./assets/FalsterGrotesk-Regular.woff) format('woff');
+}
+@font-face {
+  font-family: 'FalsterGrotesk-Medium';
+  src: url(./assets/FalsterGrotesk-Medium.woff) format('woff');
+}
+
+body {
+  font-family: 'FalsterGrotesk-Light', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.3;
+  color: #000;
+  background-color: #fff;
+}
+
+.App {
+  margin: 5vh 5vw;
+  display: block;
+  position: relative;
+  border: 1px solid;
+  border: 1px solid #000000;
+  box-shadow: 0.5px 0.5px 1px 1px #000000;
+}
+
+.bar {
+  padding: 0;
+  margin: 0;
+  display: block;
+  position: relative;
+  width: 100%;
+  top: 0;
+}
+
+.main {
+  padding: 10px 20px;
+}
+
+.title {
+  font-family: 'FalsterGrotesk-Medium', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-family: 'FalsterGrotesk-Regular', sans-serif;
+}
+
+/*.currently::before, .previously::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #ff4747;
+  vertical-align: middle;
+  margin-right: 0.5vw;
+}
+
+.previously::before {
+  background-color: #000;
+}*/
+
+
+@media only screen  and (min-width : 1224px) {
+
+  .App {
+    max-width: 50vw;
+  }
+}

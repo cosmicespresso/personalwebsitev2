@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="505px" height="16px" viewBox="0 0 505 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>bar</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="9" y="0" width="11" height="11"></rect>
+        <rect id="path-2" x="0" y="0" width="11" height="11"></rect>
+    </defs>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bar" transform="translate(0.000000, 1.000000)">
+            <g id="Looper_Group" transform="translate(2.000000, 0.000000)" stroke="#000000" stroke-linecap="square">
+                <g id="original_original_duplicate_1_original_original_Line_53505941_90386164_75375898_96942123-Group">
+                    <path d="M0.340136054,10.5 L499.659864,10.5" id="duplicate_6_original_original_duplicate_1_original_original_Line_53505941_90386164_75375898_96942123"></path>
+                    <path d="M0.340136054,8.5 L499.659864,8.5" id="duplicate_5_original_original_duplicate_1_original_original_Line_53505941_90386164_75375898_96942123"></path>
+                    <path d="M0.340136054,6.5 L499.659864,6.5" id="duplicate_4_original_original_duplicate_1_original_original_Line_53505941_90386164_75375898_96942123"></path>
+                    <path d="M0.340136054,4.5 L499.659864,4.5" id="duplicate_3_original_original_duplicate_1_original_original_Line_53505941_90386164_75375898_96942123"></path>
+                    <path d="M0.340136054,2.5 L499.659864,2.5" id="duplicate_2_original_original_duplicate_1_original_original_Line_53505941_90386164_75375898_96942123"></path>
+                    <path d="M0.340136054,0.5 L499.659864,0.5" id="duplicate_1_original_original_duplicate_1_original_original_Line_53505941_90386164_75375898_96942123"></path>
+                </g>
+            </g>
+            <g id="Rectangle-2">
+                <rect stroke="#000000" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd" x="9.5" y="0.5" width="10" height="10"></rect>
+                <rect stroke="#FFFFFF" x="8.5" y="-0.5" width="12" height="12"></rect>
+            </g>
+            <g id="Rectangle-3" transform="translate(484.000000, 0.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <g id="Mask">
+                    <rect stroke="#000000" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd" x="0.5" y="0.5" width="10" height="10"></rect>
+                    <rect stroke="#FFFFFF" x="-0.5" y="-0.5" width="12" height="12"></rect>
+                </g>
+                <rect stroke="#000000" mask="url(#mask-3)" x="-2.5" y="-1.5" width="9" height="8"></rect>
+            </g>
+            <rect id="Rectangle-4" fill="#FFFFFF" x="210" y="0" width="85" height="14"></rect>
+            <path d="M0.5,14.5 L504.5,14.5" id="Line" stroke="#000000" stroke-linecap="square"></path>
+            <text id="KALLI-RETZEPI" font-family="BCFalsterGrotesk-Regular, BC Falster Grotesk" font-size="12" font-weight="normal" fill="#000000">
+                <tspan x="212.174" y="9">KALLI RETZEPI</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
