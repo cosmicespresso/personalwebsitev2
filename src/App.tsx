@@ -5,6 +5,7 @@ import ReactGA from 'react-ga';
 
 function App() {
   ReactGA.initialize('UA-89607558-1', { standardImplementation: true });
+  
   return (
 
     <div className="App">
