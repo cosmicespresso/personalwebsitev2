@@ -29,7 +29,10 @@ body {
   border: 1px solid;
   border: 1px solid #000000;
   box-shadow: 0.5px 0.5px 1px 1px #000000;
+  cursor: grab;
 }
+
+.App
 
 .bar {
   padding: 0;

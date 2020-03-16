@@ -2,12 +2,15 @@ import React from 'react';
 import bar from './assets/bar.svg';
 import './App.css';
 import ReactGA from 'react-ga';
+import * as Draggable from 'react-draggable'
 
 function App() {
+
   ReactGA.initialize('UA-89607558-1', { standardImplementation: true });
-  
+
   return (
 
+    <Draggable>
     <div className="App">
       <img className='bar' src={bar} alt='bar'/>
       <div className='main'>
@@ -27,6 +30,7 @@ function App() {
         </p>
       </div>
     </div>
+    </Draggable>
   );
 }
 
