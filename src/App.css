@@ -22,6 +22,12 @@ body {
   background-color: #d1d1d1;
 }
 
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
 .App {
   margin: 5vh 5vw;
   display: block;
@@ -33,8 +39,6 @@ body {
   background-color: #fff;
 }
 
-.App
-
 .bar {
   padding: 0;
   margin: 0;
@@ -45,7 +49,8 @@ body {
 }
 
 .main {
-  padding: 10px 20px;
+  padding: 10px 0 0 10px;
+  margin: 10px 0 0 10px;
 }
 
 .title {
@@ -61,6 +66,42 @@ a {
 img.bar {
   position: fixed;
   cursor: default;
+}
+
+.location {
+  display: block;
+  position: absolute;
+  bottom: 2vh;
+  left: 5vw;
+  font-size: 1rem;
+  font-weight: 600;
+  animation: blink-animation 4s ease-in-out infinite;
+  -webkit-animation: blink-animation 4s ease-in-out ease infinite;
+}
+
+.location::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-right: 0.5vw;
+  border: 0.5px solid;
+}
+
+
+@keyframes blink-animation {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@-webkit-keyframes blink-animation {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
 }
 
 @media only screen  and (min-width : 1224px) {
