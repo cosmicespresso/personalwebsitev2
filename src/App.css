@@ -63,9 +63,18 @@ a {
   font-family: 'FalsterGrotesk-Regular', sans-serif;
 }
 
+a:hover {
+  cursor: hand;
+}
+
 img.bar {
   position: fixed;
   cursor: default;
+}
+
+
+.links > a {
+  margin: 0 0.2vw;
 }
 
 .location {
@@ -75,8 +84,9 @@ img.bar {
   left: 5vw;
   font-size: 1rem;
   font-weight: 600;
-  animation: blink-animation 4s ease-in-out infinite;
-  -webkit-animation: blink-animation 4s ease-in-out ease infinite;
+  text-transform: uppercase;
+  animation: blink-animation 2.5s ease-in-out infinite;
+  -webkit-animation: blink-animation 2.5s ease-in-out ease infinite;
 }
 
 .location::before {
