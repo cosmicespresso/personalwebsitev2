@@ -2,7 +2,7 @@ import React from 'react';
 import bar from './assets/bar.svg';
 import './App.css';
 import ReactGA from 'react-ga';
-import * as Draggable from 'react-draggable'
+import Draggable from 'react-draggable'
 
 function App() {
   ReactGA.initialize('UA-89607558-1', { standardImplementation: true });
@@ -31,12 +31,12 @@ function App() {
             <p className='links'> 
             Or talk to me via: 
               <a href="mailto:kalli.retzepi@gmail.com" target="_blank" rel="noopener noreferrer">email</a>  • 
-              <a href="https://keybase.io/kallirroi/chat" target="_blank" rel="noopener noreferrer">keybase</a>
+              <a href="https://keybase.io/blog/keybase-joins-zoom" target="_blank" rel="noopener noreferrer"><del>keybase</del></a> forget it, they were acquired by Zoom
             </p>
           </div>
         </div>
       </Draggable>
-      <div className='location'>currently (stuck) in Brooklyn, NY</div>
+      <div className='location'>currently (stuck) in <del>Brooklyn</del> Buffalo, NY</div>
     </div>
   );
 }
