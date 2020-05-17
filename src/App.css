@@ -19,13 +19,14 @@ body {
   font-size: 1.6rem;
   line-height: 1.3;
   color: #000;
-  background-color: #d1d1d1;
 }
 
 .wrapper {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+  background-image: url('assets/texture.png');
+  background-size: center;
 }
 
 .App {
@@ -37,6 +38,7 @@ body {
   box-shadow: 0.5px 0.5px 1px 1px #000000;
   cursor: grab;
   background-color: #fff;
+  opacity: 0.9;
 }
 
 .bar {
@@ -82,11 +84,12 @@ img.bar {
   position: absolute;
   bottom: 2vh;
   left: 5vw;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
   animation: blink-animation 2.5s ease-in-out infinite;
   -webkit-animation: blink-animation 2.5s ease-in-out ease infinite;
+  color: #fff;
 }
 
 .location::before {
@@ -96,12 +99,11 @@ img.bar {
   height: 8px;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: #fff;
   margin-right: 0.5vw;
-  border: 0.5px solid;
+  vertical-align: baseline;
 }
-
 
 @keyframes blink-animation {
   0% {opacity: 0;}
