@@ -32,7 +32,7 @@ function App() {
     <div className="App">
       <div className={isTable ? 'work' : 'work messy'}>
         <div className='buttons'>
-          <header>Work</header>
+          <header>Selected work</header>
           <div className='button' onClick={(e) => setIsTable(!isTable)}>{isTable ? '?' : 'oops'}</div>
         </div>
         {isLoading && <div>Loading....</div>}
