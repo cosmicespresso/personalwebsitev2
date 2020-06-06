@@ -18,7 +18,6 @@
 .App {
   display: block;
   margin: 6vh 2vw;
-  width: 90vw;
   position: relative;
   font-family: 'BAG Regular', sans-serif;
   font-size: 1.1rem;
@@ -90,7 +89,6 @@ a:hover, .button:hover {
   align-items: flex-start;
   justify-content: space-between;
   margin: 0.3vh 0.1vw;
-  vertical-align: baseline;
 }
 
 .project:hover {
@@ -101,7 +99,6 @@ a:hover, .button:hover {
   height: auto;
   overflow: hidden;
 }
-
 
 .small {
   flex-basis: 5%;
@@ -127,6 +124,45 @@ a:hover, .button:hover {
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-around;
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .project {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: stretch;
+    margin: 1vh 0;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .small, .medium {
+    display: none;
+  }
+
+  .project > *:last-child {
+    display: block;
+    text-decoration: underline;
+  }
+
+  .name {
+    display: block;
+    text-transform: uppercase;
+  }
+
+  .field {
+    height: auto;
+  }
+
+  .section {
+    width: 100%;
+  }
 }
 
 
