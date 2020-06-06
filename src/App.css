@@ -1,123 +1,130 @@
-@import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600&display=swap');
 
 @font-face {
-  font-family: 'FalsterGrotesk-Light';
-  src: url(./assets/FalsterGrotesk-Light.woff) format('woff');
+  font-family: 'BAG Regular';
+  src: url('./assets/BAG-Regular.otf') format('opentype');
 }
 
 @font-face {
-  font-family: 'FalsterGrotesk-Regular';
-  src: url(./assets/FalsterGrotesk-Regular.woff) format('woff');
-}
-@font-face {
-  font-family: 'FalsterGrotesk-Medium';
-  src: url(./assets/FalsterGrotesk-Medium.woff) format('woff');
+  font-family: 'BAG Italic';
+  src: url('./assets/BAG-Italic.otf') format('opentype');
 }
 
-body {
-  font-family: 'FalsterGrotesk-Light', sans-serif;
-  font-size: 1.6rem;
+@font-face {
+  font-family: 'BAG Light';
+  src: url('./assets/BAG-Light.otf') format('opentype');
+}
+
+.App {
+  display: block;
+  margin: 6vh 2vw;
+  width: 90vw;
+  position: relative;
+  font-family: 'BAG Regular', sans-serif;
+  font-size: 1.1rem;
   line-height: 1.3;
   color: #000;
 }
 
-.wrapper {
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-  background-image: url('assets/texture.png');
-  background-size: center;
-}
-
-.App {
-  margin: 5vh 5vw;
-  display: block;
-  position: relative;
-  border: 1px solid;
-  border: 1px solid #000000;
-  box-shadow: 0.5px 0.5px 1px 1px #000000;
-  cursor: grab;
-  background-color: #fff;
-  opacity: 0.9;
-}
-
-.bar {
+header {
+  font-family: 'BAG Italic', sans-serif;
   padding: 0;
   margin: 0;
-  display: block;
-  position: relative;
-  width: 100%;
-  top: 0;
-}
-
-.main {
-  padding: 10px 0 0 10px;
-  margin: 10px 0 0 10px;
-}
-
-.title {
-  font-family: 'FalsterGrotesk-Medium', sans-serif;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-  font-family: 'FalsterGrotesk-Regular', sans-serif;
 }
 
-a:hover {
-  cursor: hand;
+ul, p {
+  padding: 0;
+  margin: 0;
 }
 
-img.bar {
-  position: fixed;
-  cursor: default;
+li {
+  list-style: none;
 }
 
-
-.links > a {
-  margin: 0 0.2vw;
+.color {
+  color: #f0414a;
 }
 
-.location {
-  display: block;
-  position: absolute;
-  bottom: 2vh;
-  left: 5vw;
-  font-size: 1.2rem;
-  font-weight: 600;
+.section, .work  {
+  margin: 5vh 0;
+  padding: 0;
+}
+
+.section {
+  width: 35%;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;  
+  justify-content: space-between;
+  width: 100%;
+}
+
+.button {
+  box-shadow: none;
   text-transform: uppercase;
-  animation: blink-animation 2.5s ease-in-out infinite;
-  -webkit-animation: blink-animation 2.5s ease-in-out ease infinite;
-  color: #fff;
 }
 
-.location::before {
-  content: '';
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
-  background-color: #fff;
-  margin-right: 0.5vw;
+a:hover, .button:hover {
+  cursor: pointer;
+  color: #f0414a;
+}
+
+.project {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0.3vh 0.1vw;
   vertical-align: baseline;
 }
 
-@keyframes blink-animation {
-  0% {opacity: 0;}
-  50% {opacity: 1;}
-  100% {opacity: 0;}
-}
-@-webkit-keyframes blink-animation {
-  0% {opacity: 0;}
-  50% {opacity: 1;}
-  100% {opacity: 0;}
+.project:hover {
+  color: #f0414a;
 }
 
-@media only screen  and (min-width : 1224px) {
-  .App {
-    max-width: 50vw;
-  }
+.field {
+  height: auto;
+  overflow: hidden;
 }
+
+
+.small {
+  flex-basis: 5%;
+}
+
+.medium {
+  flex-basis: 20%;
+}
+
+.large {
+  flex-basis: 45%;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.work.messy > .project {
+  flex-direction: column;
+}
+
+
