@@ -41,7 +41,7 @@ function App() {
             project.fields.online ?
               <div className='project' key={i}> 
                 <div className='field medium name'>{project.fields.Name}</div>
-                <div className='field small'>{project.fields.Theme}</div>
+                <div className='field medium'>{project.fields.Theme}</div>
                 <div className='field large'>{project.fields.Description}</div>
                 <div className='field small right'>{project.fields.Start}</div>
                 <div className='field small right'>{project.fields.URL ? <a href={project.fields.URL}>link</a> : ' '}</div>
@@ -55,8 +55,7 @@ function App() {
       <div className='section'>
         <header>About</header>
         
-        <div className='interest'>I use code and design to build interfaces and systems that are transparent, resist biases and challenge paradigms. I am very interested in the history and politics of interfaces, decentralization, algorithmic fairness and accountability.</div>
-        
+        <div className='interest'>I use code and design to build interactive interfaces and systems that resist biases and challenge paradigms. I am very interested in the history and politics of interfaces, decentralization, algorithmic fairness and transparent technology.</div>
       </div>
 
 
@@ -74,7 +73,7 @@ function App() {
 
       <div className='section'>
         <header>Clients</header>
-        include the Mozilla Foundation, the Robert Wood Johnson Foundation, the MIT Civic Data Design Lab and the Harvard Visual Computing Group.
+        include the Mozilla Foundation, the NOKIA BELL Labs, the Robert Wood Johnson Foundation, the MIT Civic Data Design Lab and the Harvard Visual Computing Group.
       </div>
       
       <div className='section color'> 
