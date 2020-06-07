@@ -55,7 +55,7 @@ function App() {
       <div className='section'>
         <header>About</header>
         
-        <div className='interest'>I use code and design to build interactive interfaces and systems that resist biases and challenge paradigms. I am very interested in the history and politics of interfaces, decentralization, algorithmic fairness and transparent technology.</div>
+        <div className='interest'>I use code and design to build interfaces and systems that resist biases and challenge paradigms. I am very interested in the history and politics of interfaces, decentralization and algorithmic fairness.</div>
       </div>
 
 
