@@ -43,7 +43,8 @@ function App() {
                 <div className='field medium name'>{project.fields.Name}</div>
                 <div className='field medium'>{project.fields.Theme}</div>
                 <div className='field large'>{project.fields.Description}</div>
-                <div className='field small right'>{project.fields.Start}</div>
+                <div className='field medium'>{project.fields.technology}</div>
+                <div className='field small '>{project.fields.Start}</div>
                 <div className='field small right'>{project.fields.URL ? <a href={project.fields.URL}>link</a> : ' '}</div>
               </div>
             : null

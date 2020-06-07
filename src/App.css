@@ -146,6 +146,15 @@ a:hover, .button:hover {
     display: none;
   }
 
+  .project > *:nth-child(4) {
+    display: block;
+    font-family: 'BAG Italic', sans-serif;
+  }  
+
+/*  .project > *:nth-child(4)::before {
+    content: 'tools:  ';
+  }*/
+
   .project > *:last-child {
     display: block;
     text-decoration: underline;
