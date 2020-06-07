@@ -74,7 +74,7 @@ function App() {
 
       <div className='section'>
         <header>Clients and collaborators</header>
-        include the Mozilla Foundation, the NOKIA BELL Labs, the Robert Wood Johnson Foundation, the MIT Civic Data Design Lab and the Harvard Visual Computing Group.
+        include the Mozilla Foundation, the Robert Wood Johnson Foundation, the MIT Civic Data Design Lab and the Harvard Visual Computing Group.
       </div>
       
       <div className='section color'> 
