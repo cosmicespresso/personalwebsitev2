@@ -73,7 +73,7 @@ function App() {
       </div>*/}      
 
       <div className='section'>
-        <header>Clients</header>
+        <header>Clients and collaborators</header>
         include the Mozilla Foundation, the NOKIA BELL Labs, the Robert Wood Johnson Foundation, the MIT Civic Data Design Lab and the Harvard Visual Computing Group.
       </div>
       
