@@ -58,24 +58,6 @@ function App() {
         
         <div className='interest'>I use code and design to build interfaces and systems that resist biases and challenge paradigms. I am very interested in the history and politics of interfaces, decentralization and algorithmic fairness.</div>
       </div>
-
-
-      {/*<div className='section'>
-        <header>My path</header>
-        <ul>
-          <li>SP1 20 participant at the <a href="https://www.recurse.com" target="_blank" rel="noopener noreferrer">Recurse Center</a></li>
-          <li>adjunct faculty at the <a href="https://dsi.sva.edu/faculty/kalli-retzepi/" target="_blank" rel="noopener noreferrer">Schoool for Visual Arts in NYC</a></li>
-          <li>co-founder of <a href="https://foreignobjects.net/" target="_blank" rel="noopener noreferrer"> FOREIGN OBJECTS</a></li>
-          <li>graduate student at the MIT Media Lab</li>
-          <li>interaction engineer at <a href="https://www.interactivethings.com/">INTERACTIVE THINGS</a></li>
-          <li>brain imaging researcher at Harvard Medical School</li>
-        </ul>
-      </div>*/}      
-
-      <div className='section'>
-        <header>Clients and collaborators</header>
-        include the Mozilla Foundation, the Robert Wood Johnson Foundation, the MIT Civic Data Design Lab and the Harvard Visual Computing Group.
-      </div>
       
       <div className='section color'> 
         <header>Contact</header>
