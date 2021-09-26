@@ -36,12 +36,13 @@ function App() {
       <div className='work'>
         {isLoading && <div>Loading....</div>}
         {airtableData !== undefined && airtableData.map( (project, i) => {
+          const content = project.fields.Content
           return (
             <div className='section' key={i}> 
               <div className='name small'>{project.fields.Name}</div>
               <ReactMarkdown 
                 className='field small' 
-                children={project.fields.Content.includes('gif') ? `![name](${project.fields.Content})` : project.fields.Content} 
+                children={content?.includes('gif') ? `![name](${content})` : content} 
                 remarkPlugins={[remarkGfm]}
                 escapeHtml={false}
                 />
