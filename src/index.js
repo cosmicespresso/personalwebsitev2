@@ -7,7 +7,7 @@ import SEO from 'react-seo-component';
 <SEO
   title={'kalli retzepi'}
   description={'personal website'}
-  image={'https://raw.githubusercontent.com/Kallirroi/personalwebsitev2/master/public/favicon.ico'}
+  image={'https://www.kalli-retzepi.com/twitter.png'}
   pathname={'https://kalli-retzepi.com/'}
   twitterUsername={'@kallirroi'}
 />
