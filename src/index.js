@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import SEO from 'react-seo';
+import SEO from 'react-seo-component';
 
 <SEO
   title={'kalli retzepi'}
