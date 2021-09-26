@@ -79,6 +79,10 @@ li {
   overflow: hidden;
 }
 
+.field > ul > li {
+  margin: 0.2vh 0;
+}
+
 .small {
   flex-basis: 5%;
 }

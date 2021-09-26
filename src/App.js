@@ -19,7 +19,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-        fetch(`${airtable_api_url}/${airtable_base}/${airtable_table}`, {
+        fetch(`${airtable_api_url}/${airtable_base}/${airtable_table}?sort%5B0%5D%5Bfield%5D=Index&sort%5B0%5D%5Bdirection%5D=asc`, {
             method: 'GET',
             "headers": { "Authorization": `Bearer ${process_api_key}` },
             "content-type": "application/json"
