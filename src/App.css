@@ -89,12 +89,13 @@ li {
 
 @media screen and (max-width: 800px) {
 
-  .small, .medium {
-    display: none;
-  }
 
   .field {
     height: auto;
+  }
+
+  .field > * > img {
+    width: 100%;
   }
 
   .section {
