@@ -33,7 +33,12 @@ header {
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: underline;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #f0414a;
 }
 
 ul, p {
@@ -64,35 +69,9 @@ li {
   align-items: flex-start;
 }
 
-.buttons {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;  
-  justify-content: space-between;
-  width: 100%;
-}
-
-.button {
-  box-shadow: none;
+.name {
   text-transform: uppercase;
-}
-
-a:hover, .button:hover {
-  cursor: pointer;
-  color: #f0414a;
-}
-
-.project {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin: 0.3vh 0.1vw;
-}
-
-.project:hover {
-  color: #f0414a;
+  margin: 0.5vh 0;
 }
 
 .field {
@@ -100,71 +79,18 @@ a:hover, .button:hover {
   overflow: hidden;
 }
 
+.field > ul > li {
+  margin: 0.2vh 0;
+}
+
 .small {
   flex-basis: 5%;
 }
 
-.medium {
-  flex-basis: 20%;
-}
-
-.large {
-  flex-basis: 50%;
-}
-
-.left {
-  text-align: left;
-}
-
-.right {
-  text-align: right;
-}
-
-.work.messy > .project {
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: space-around;
-}
-
-
-
-
 @media screen and (max-width: 800px) {
-
-  .project {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: stretch;
-    margin: 1vh 0;
-  }
-
-  .button {
-    display: none;
-  }
 
   .small, .medium {
     display: none;
-  }
-
-  .project > *:nth-child(4) {
-    display: block;
-    font-family: 'BAG Italic', sans-serif;
-  }  
-
-/*  .project > *:nth-child(4)::before {
-    content: 'tools:  ';
-  }*/
-
-  .project > *:last-child {
-    display: block;
-    text-decoration: underline;
-  }
-
-  .name {
-    display: block;
-    text-transform: uppercase;
   }
 
   .field {
