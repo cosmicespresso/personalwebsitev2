@@ -20,11 +20,13 @@ function App() {
         </div>
         <div className="section">
           <div className="name small">recent image</div>
-          <img
-            width={window.innerWidth / 6}
-            src="https://d2w9rnfcy7mm78.cloudfront.net/21182967/original_a9d7117ee772ed2cbff5d15c7eb7b205.jpg?1680367189?bc=0"
-            alt="film photography of mount fuji in japan"
-          />
+          <a href="https://www.are.na/kalli-retzepi/personal-film-photographs">
+            <img
+              width={"66%"}
+              src="https://d2w9rnfcy7mm78.cloudfront.net/21182967/original_a9d7117ee772ed2cbff5d15c7eb7b205.jpg?1680367189?bc=0"
+              alt="film photography of mount fuji in japan"
+            />
+          </a>
         </div>
       </div>
     </div>
