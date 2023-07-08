@@ -9,7 +9,6 @@ import SEO from 'react-seo-component';
   description={'personal website'}
   image={'https://www.kalli-retzepi.com/twitter.png'}
   pathname={'https://kalli-retzepi.com/'}
-  twitterUsername={'@kallirroi'}
 />
 
 ReactDOM.render(<App />, document.getElementById('root'));

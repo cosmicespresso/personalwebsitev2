@@ -1,55 +1,31 @@
-import React, {useState, useEffect} from 'react';
-import dotenv from 'dotenv'; 
+import React from 'react';
 import ReactGA from 'react-ga';
-import ReactMarkdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
 
 import './App.css';
-
-dotenv.config()
-const process_api_key = process.env.REACT_APP_AIRTABLE_API_KEY;
-const airtable_api_url = process.env.REACT_APP_AIRTABLE_API_URL;
-const airtable_table = process.env.REACT_APP_AIRTABLE_TABLE;
-const airtable_base = process.env.REACT_APP_AIRTABLE_BASE; 
 
 function App() {
   ReactGA.initialize('UA-89607558-1', { standardImplementation: true });
 
-  const [airtableData, setAirtableData] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-        fetch(`${airtable_api_url}/${airtable_base}/${airtable_table}?sort%5B0%5D%5Bfield%5D=Index&sort%5B0%5D%5Bdirection%5D=asc`, {
-            method: 'GET',
-            "headers": { "Authorization": `Bearer ${process_api_key}` },
-            "content-type": "application/json"
-        })
-            .then(res => res.json())
-            .then((data) => {
-                setAirtableData(data.records)
-            })
-        setIsLoading(false);
-    }, [])
-
   return (
-    <div className='App'>
-      <div className='work'>
-        {isLoading && <div>Loading....</div>}
-        {airtableData !== undefined && airtableData.map( (project, i) => {
-          const content = project.fields.Content
-          return (
-            <div className='section' key={i}> 
-              <div className='name small'>{project.fields.Name}</div>
-              <ReactMarkdown 
-                className='field small' 
-                children={content?.includes('gif') ? `![name](${content})` : content} 
-                remarkPlugins={[remarkGfm]}
-                escapeHtml={false}
-                />
-            </div>
-          )
-         })
-        }
+    <div className="App">
+      <div className="work">
+        <div className="section">
+          <div className="name small">Hi this is Kalli</div>
+          <p>I do not maintain an online presence right now.</p>
+          <p>
+            You can take a look{" "}
+            <a href="https://www.are.na/kalli-retzepi">here</a> for some loose
+            interests.
+          </p>
+        </div>
+        <div className="section">
+          <div className="name small">recent image</div>
+          <img
+            width={window.innerWidth / 6}
+            src="https://d2w9rnfcy7mm78.cloudfront.net/21182967/original_a9d7117ee772ed2cbff5d15c7eb7b205.jpg?1680367189?bc=0"
+            alt="film photography of mount fuji in japan"
+          />
+        </div>
       </div>
     </div>
   );
