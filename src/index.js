@@ -8,7 +8,7 @@ import SEO from 'react-seo-component';
   title={'kalli retzepi'}
   description={'personal website'}
   image={'https://www.kalli-retzepi.com/twitter.png'}
-  pathname={'https://kalli-retzepi.com/'}
+  pathname={'https://www.are.na/kalli-retzepi/index'}
 />
 
 ReactDOM.render(<App />, document.getElementById('root'));
