@@ -23,8 +23,8 @@ function App() {
           <a href="https://www.are.na/kalli-retzepi/personal-film-photographs">
             <img
               width={"66%"}
-              src="https://d2w9rnfcy7mm78.cloudfront.net/21182967/original_a9d7117ee772ed2cbff5d15c7eb7b205.jpg?1680367189?bc=0"
-              alt="film photography of mount fuji in japan"
+              src="https://d2w9rnfcy7mm78.cloudfront.net/23331135/original_69c61d3d62a4a4d95d8a104f8d091cc1.jpg?1693039595?bc=0"
+              alt="some of kalli's film photography collection"
             />
           </a>
         </div>
